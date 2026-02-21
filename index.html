@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>When Stars Fell</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="game-canvas" aria-label="When Stars Fell 3D game canvas"></canvas>
+
+    <div id="hud">
+      <div id="chapter-card"></div>
+      <div id="objective"></div>
+      <div id="interact-prompt">Press <strong>E</strong> to interact</div>
+      <button id="gallery-btn" type="button">Memory Sketches</button>
+      <button id="next-btn" type="button" hidden>Continue</button>
+    </div>
+
+    <div id="dialogue" class="panel hidden">
+      <h3 id="speaker"></h3>
+      <p id="line"></p>
+      <div id="choices"></div>
+      <button id="dialogue-next" type="button">Next</button>
+    </div>
+
+    <div id="minigame" class="panel hidden">
+      <h3 id="minigame-title"></h3>
+      <p id="minigame-text"></p>
+      <div id="minigame-content"></div>
+      <button id="minigame-close" type="button">Done</button>
+    </div>
+
+    <div id="gallery" class="panel hidden">
+      <h3>Memory Sketch Gallery</h3>
+      <div id="sketch-list"></div>
+      <button id="gallery-close" type="button">Close</button>
+    </div>
+
+    <div id="mobile-controls">
+      <button data-move="up">▲</button>
+      <div>
+        <button data-move="left">◀</button>
+        <button data-move="down">▼</button>
+        <button data-move="right">▶</button>
+      </div>
+      <button id="mobile-interact">Interact</button>
+    </div>
+
+    <script type="module" src="game.js"></script>
+  </body>
+</html>
