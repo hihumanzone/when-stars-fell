@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>When Stars Fell</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="game"></div>
+
+  <div id="hud">
+    <div id="chapterTitle"></div>
+    <div id="objective"></div>
+    <div id="prompt"></div>
+    <button id="galleryBtn">Memory Sketches</button>
+  </div>
+
+  <div id="dialogue" class="panel hidden">
+    <div id="speaker"></div>
+    <div id="line"></div>
+    <div id="choices"></div>
+    <button id="nextLine">Continue</button>
+  </div>
+
+  <div id="minigame" class="panel hidden"></div>
+
+  <div id="gallery" class="panel hidden">
+    <h2>Memory Sketch Gallery</h2>
+    <div id="sketches"></div>
+    <button id="closeGallery">Close</button>
+  </div>
+
+  <div id="joystick" class="mobile hidden">
+    <div id="stick"></div>
+  </div>
+  <button id="mobileInteract" class="mobile hidden">E</button>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
